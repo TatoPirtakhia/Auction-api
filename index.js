@@ -6,7 +6,7 @@ const PORT = 4000;
 const fs = require("fs");
 const socketIO = require("socket.io")(http, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://192.168.100.6:3000",
   },
 });
 const savedData = fs.readFileSync("data.json");
