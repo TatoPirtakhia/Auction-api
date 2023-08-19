@@ -59,6 +59,6 @@ app.get("/api", (req, res) => {
   res.json(products);
 });
 
-http.listen(PORT, () => {
+http.listen(process.env.PORT || PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
